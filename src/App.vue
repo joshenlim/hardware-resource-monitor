@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="column">
+        <div class="column cpu-usage-col">
           <div class="header">
             <p class="component">CPU</p>
             <p class="descriptor">{{ cpuInfo.manufacturer }} {{ cpuInfo.brand }}</p>
@@ -236,33 +236,38 @@ export default {
 body {
   background-color: #000000;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .container {
-  height: 100vh;
+  height: 90vh;
   padding: 20px;
   .row {
-    height: 45%;
+    height: 50%;
     display: flex;
     .column {
       flex: 1;
     }
+    .cpu-usage-col {
+      flex: 2
+    }   
   }
 }
 
 .header {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   .component {
     font-weight: 800;
     font-family: 'Manrope', sans-serif;
     color: #FFFFFF;
     margin: 0;
     margin-bottom: 10px;
-    font-size: 1.3em;
+    font-size: 2.5em;
   }
   .descriptor {
     margin: 0;
     font-weight: 600;
+    font-size: 1.5em;
   }
 }
 
@@ -332,13 +337,14 @@ body {
 
 .cpu-usage {
   font-weight: 800;
+  font-size: 1.3em;
   .type {
     position: absolute;
-    top: -30px;
+    top: -45px;
   }
   .value {
     position: absolute;
-    top: -30px;
+    top: -45px;
     right: 0;
   }
 }
@@ -346,6 +352,7 @@ body {
 .no-info {
   margin-top: 70px;
   font-weight: 600;
+  font-size: 1.5em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -365,5 +372,4 @@ body {
     }
   }
 }
-
 </style>
