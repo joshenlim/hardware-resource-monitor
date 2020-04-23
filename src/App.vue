@@ -241,7 +241,7 @@ body {
 
 .container {
   height: 90vh;
-  padding: 35px 50px;
+  padding: 20px;
   .row {
     height: 50%;
     display: flex;
@@ -322,11 +322,11 @@ body {
     }
     .value {
       font-size: 3em;
-      margin-top: -3px;
+      margin-top: 0px;
     }
     .unit {
       position: relative;
-      top: -8px;
+      top: 0px;
     }
   }
 
