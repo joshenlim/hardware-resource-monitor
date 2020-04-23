@@ -1,29 +1,8 @@
-# sys_info_app
+# Hardware Resource Monitor
 
-## Project setup
-```
-npm install
-```
+Simple browser-based hardware resource monitoring tool for my own Macbook that runs on my Raspberry Pi. Will require a server on my Macbook to send system related information via API. UI built using Vue.
 
-### Compiles and hot-reloads for development
+## Setup
 ```
-npm run serve
+npm start
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
